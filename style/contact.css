@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+    transition:all 3s;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #F9F1F0;
+}
+nav {
+  margin: 0;
+  width: 80vw;
+  margin-bottom: 20px;   
+}
+nav ul li {
+ list-style: none;
+ display: inline-block;
+}
+nav li a {
+  display: inline;
+}
+nav a {
+    display: block;
+    margin: 3rem;
+    text-decoration: none;
+}
+nav a:hover {
+  color: #fff;
+  background-color:#000;
+}
+nav a:active {
+  background-color:#000;
+  color:#888888;
+}
+/* section */
+section {
+  width: 32vw;
+  height: 82vh;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px #888888;
+}
+label {
+    display: block;
+}
+input, .input {
+    width: 90%;
+    height: 6vh;
+    border-color: #fff;
+    line-height: var(1.8);
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 2px;
+}
+.clear {
+    display: block;
+}
+
+.left, .right {
+    display: inline-block;
+    
+}
+.left {
+  width : 40%;
+  padding: 0;
+}
+.right {
+  margin-left: 30px;
+  width: 50%;
+  padding: 0;
+}
+
+button {
+    align-self: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    min-width: 140px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+  }
+  
+  button:focus {
+    color: #171e29;
+  }
+  
+  button:hover {
+    border-color: #888888;
+    color: #888888;
+    fill: #888;
+  }
+  
+  button:active {
+    border-color: #888888;
+    color: #888;
+    fill: #888888;
+  }
+  
+  
+  @media only screen and (max-width: 975px) {
+    .left, .right {
+      display: block;
+      width: 90%;
+    } 
+    .right {
+      margin-left: 0;
+    }
+    textarea {
+     width: 80%;
+     height: 80%;
+    }
+    section {
+      height: 100%;
+    }
+  }
+  @media only screen and (max-width:1047px) {
+    textarea {
+      width: 90%;
+      height: 80%;
+     }
+    
+  }
+
+  @media only screen and (max-width:1009px) {
+    nav ul li {
+      display: block;
+     }
+    
+   section {
+    width: 70vw;
+  }
+
+  nav a {
+    margin: 0;
+  }
+    
+  }

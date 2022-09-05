@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----Google fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Chakra+Petch:wght@300&family=Nova+Square&display=swap" rel="stylesheet">
+    <!-----Google fonts links-->
+    <link rel="stylesheet" type="text/css" href="/style/contact.css" >
+    <title>Contact Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/" >Home</a></li>
+            <li><a href="/pages/contact.html" >Contact</a></li>
+            <li><a href="/pages/register.html" >Register</a></li>
+            <li><a href="/pages/login.html" >Login</a></li>
+            <li><a href="/pages/calculator.html" >Calculator</a></li>
+        </ul>
+    </nav>
+<section>
+    <h2>Contact Me</h2>
+    <form>
+       <p class="clear">
+        <p class="left" >
+            <label for="name" >Name:</label>
+            <input placeholder="Firstname" type="text" name="name" required >
+        </p>
+        <p class="right">
+            <label for="email" >Email:</label>
+            <input type="email" name="email" placeholder="Email" required >      
+        </p>
+       </p>
+        <p>
+            <label for="message" >Message:</label>
+            <textarea rows="10" placeholder="Insert Message" name="message" cols="52" ></textarea>
+        </p>
+               
+        <p>
+            <label for="priority" >Priority: </label>
+            <select name="priority" class="input" >
+                <option  value="very_low" >Very Low</option>
+                <option  value="low" >Low</option>
+                <option  value="medium" >Medium</option>
+                <option  value="high" >High</option>
+                <option  value="very_high" >Very High</option>
+            </select>
+            <p>
+                <button type="submit" name=""submitButton >
+                    Send
+                </button>
+            </p>
+
+        </p>
+    </form>
+</section>
+</body>
+</html>
